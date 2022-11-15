@@ -7,10 +7,10 @@ tasks:
       sudo mysql -e "CREATE DATABASE IF NOT EXISTS todos"
     command: |
       source ~/.bashrc
-      apachectl start
+      symfony server:start
 
 ports:
-  - port: 8001
+  - port: 8000
     onOpen: open-browser
   - port: 8828
     onOpen: ignore
